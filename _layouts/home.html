@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  <div class="content center">
+    <div class="container">
+      <div class="box">
+
+        <img src="{{ site.author.photo }}" alt="author photo" class="img-circle">
+        <h1>Hello, I'm {{ site.author.name }}!</h1>
+        <h3>{{ site.author.bio }}</h3>
+
+        <hr class="hline">
+
+        <a href="{{ '/about' }}" class="btn">about</a>
+        <a href="{{ '/projects' }}" class="btn">projects</a>
+        <a href="{{ site.author.github | prepend: "https://github.com/"}}" class="btn">github</a>
+        <a href="{{ site.author.linkedin | prepend: "http://linkedin.com/in/" }}" class="btn">linkedin</a>
+        <a href="#" class="btn">contact</a>
+
+        <hr class="hline">
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -3,33 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -44,10 +17,99 @@ $on-laptop:        800px;
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "variables";
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
+
+body{
+  background-image: $background-image;
+  background-repeat: repeat;
+}
+
+.center{
+  // Align center vertically
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content{
+  height: 100%;
+}
+
+.container{
+  // Width
+  display: block;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+
+  // Center horizontally
+  margin-left: auto;
+  margin-right: auto;
+
+  // Colour and Shape
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.3);
+}
+
+.box{
+  text-align: center;
+
+  padding-top: $spacing-unit;
+}
+
+// Circular images
+.img-circle{
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  width: 150px;
+  height: 150px;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+//Buttons
+.btn{
+  display: inline-block;
+
+  // Text Properties
+  color: $button-color;
+  font-weight: 600;
+  text-decoration: none;
+
+  // Button Properties
+  border: 2px solid;
+  border-color: $button-color;
+  border-radius: $border-radius;
+  background: #fff;
+
+  margin: 5px;
+  padding: 10px 18px;
+
+  &:visited{
+    color: darken(#337ab7, 30%);
+  }
+
+  &:hover{
+    text-decoration: none;
+    color: #f00;
+  }
+}
+
+.hline{
+  border: 0;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin: 15px 0;
+  /*background-image: -webkit-linear-gradient(left, #ededed, #a9a9a9, #ededed);
+  background-image: -moz-linear-gradient(left, #ededed, #a9a9a9, #ededed);
+  background-image: -ms-linear-gradient(left, #ededed, #a9a9a9, #ededed);
+  background-image: -o-linear-gradient(left, #ededed, #a9a9a9, #ededed);*/
+}
