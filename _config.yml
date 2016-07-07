@@ -14,13 +14,11 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 repo: http://github.com/lenkagamine/lenkagamine.github.io
 
-author:
-  name: Michael Kim
-  bio: "Welcome to my website test test"
-  photo: "https://avatars0.githubusercontent.com/u/8509052"
-  email: michaelkim314@gmail.com
-  github: lenkagamine
-  linkedin: michaelkim314
+name: Michael Kim
+bio: "Welcome to my website test test"
+photo: "https://avatars0.githubusercontent.com/u/8509052"
+github: lenkagamine
+linkedin: michaelkim314
 
 # Build settings
 markdown: kramdown

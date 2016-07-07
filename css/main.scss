@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -11,9 +10,9 @@
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 
@@ -24,19 +23,20 @@
 @import "syntax-highlighting";
 
 body{
-  background-image: $background-image;
+  background-color: #eaeaea;
+  background-image: $bg-image;
   background-repeat: repeat;
+
+  -webkit-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
 }
 
 .center{
   // Align center vertically
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.content{
-  height: 100%;
 }
 
 .container{
@@ -67,8 +67,6 @@ body{
 .img-circle{
   border-radius: 50%;
   border: 2px solid #ddd;
-  width: 150px;
-  height: 150px;
 
   margin-top: 15px;
   margin-bottom: 15px;
@@ -107,9 +105,55 @@ body{
   border: 0;
   height: 1px;
   background-color: #e8e8e8;
-  margin: 15px 0;
+  margin: $spacing-unit/2 0;
   /*background-image: -webkit-linear-gradient(left, #ededed, #a9a9a9, #ededed);
   background-image: -moz-linear-gradient(left, #ededed, #a9a9a9, #ededed);
   background-image: -ms-linear-gradient(left, #ededed, #a9a9a9, #ededed);
   background-image: -o-linear-gradient(left, #ededed, #a9a9a9, #ededed);*/
+}
+
+.fade-in{
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out{
+  animation: fadeout 1s;
+  -webkit-animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

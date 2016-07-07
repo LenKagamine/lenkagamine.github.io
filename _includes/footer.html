@@ -1,6 +1,23 @@
+<!--
+classes:
+  site-footer
+  wrapper
+  footer-heading
+  footer-col-wrapper
+  footer-col
+  footer-col-1
+  contact-list
+  footer-col-2
+  social-media-list
+  footer-col-3
+
+TODO: rewrite & cleanup
+-->
 <footer class="site-footer">
 
   <div class="wrapper">
+
+    <hr class="hline">
 
     <h2 class="footer-heading">{{ site.title }}</h2>
 
@@ -15,7 +32,7 @@
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           <li>
-            {% include icon-github.html username=site.author.github %}
+            {% include icon-github.html username=site.github %}
           </li>
 
           {% if site.twitter_username %}

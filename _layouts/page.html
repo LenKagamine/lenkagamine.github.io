@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<!--
+classes:
+  post
+  post-content
+  post-header
+  post-title
+-->
+<article id="post" class="post">
+  <div id="content" class="post-content">
 
-{% include head.html %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
 
-<body>
+    {{ content }}
 
-  {% include header.html %}
-
-  <div class="content">
-    <div class="container">
-      <div class="box">
-
-        <article class="post">
-
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-          </header>
-
-          <div class="post-content">
-            {{ content }}
-          </div>
-
-        </article>
-
-        {% include footer.html %}
-
-      </div>
-    </div>
   </div>
-
-
-</body>
-
-</html>
+</article>

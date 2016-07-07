@@ -1,3 +1,7 @@
+<!--
+TODO
+  add ids for home-page transition
+-->
 <!DOCTYPE html>
 <html>
 
@@ -5,23 +9,25 @@
 
 <body>
 
-  <div class="content center">
-    <div class="container">
+  <div class="center">
+    <div class="container fade-in">
       <div class="box">
 
-        <img src="{{ site.author.photo }}" alt="author photo" class="img-circle">
-        <h1>Hello, I'm {{ site.author.name }}!</h1>
-        <h3>{{ site.author.bio }}</h3>
+        <img src="{{ site.photo }}" alt="author photo" class="img-circle" width="150" height="150">
+        <h1>Hello, I'm {{ site.name }}!</h1>
+        <h3>{{ site.bio }}</h3>
 
         <hr class="hline">
 
-        <a href="{{ '/about' }}" class="btn">about</a>
-        <a href="{{ '/projects' }}" class="btn">projects</a>
-        <a href="{{ site.author.github | prepend: "https://github.com/"}}" class="btn">github</a>
-        <a href="{{ site.author.linkedin | prepend: "http://linkedin.com/in/" }}" class="btn">linkedin</a>
+        <a href="{{ '/about/' }}" class="btn">about</a>
+        <a href="{{ '/projects/' }}" class="btn">projects</a>
+        <a href="{{ site.github | prepend: "https://github.com/"}}" class="btn">github</a>
+        <a href="{{ site.linkedin | prepend: "http://linkedin.com/in/" }}" class="btn">linkedin</a>
         <a href="#" class="btn">contact</a>
 
         <hr class="hline">
+
+        <a href="#" id="toggle-bg" onclick="changebg();" class="btn">DARK</a>
 
       </div>
     </div>

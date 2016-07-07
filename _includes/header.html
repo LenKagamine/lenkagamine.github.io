@@ -1,3 +1,18 @@
+<!--
+classes:
+  site-header
+  wrapper
+  site-title
+  site-nav
+  trigger
+  page-link
+  icon
+  icon--github
+
+TODO:
+  add linkedin icon next to github
+  cleanup
+-->
 <header class="site-header">
 
   <div class="wrapper">
@@ -6,12 +21,12 @@
 
     <nav class="site-nav">
 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+      <div id="links" class="trigger">
+        <a class="page-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+        <a class="page-link" href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
+
+        <a href="https://github.com/{{ site.github }}"><span class="icon icon--github">{% include icon-github.svg %}</span></a>
+
       </div>
 
     </nav>
