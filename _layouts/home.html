@@ -1,6 +1,7 @@
 <!--
 TODO
   add ids for home-page transition
+  change full-page and full-page-dark to 2 images in a div
 -->
 <!DOCTYPE html>
 <html>
@@ -8,13 +9,17 @@ TODO
 {% include head.html %}
 
 <body>
+  <div id="full-page"></div>
+  <div id="full-page-dark"></div>
 
   <div class="center">
     <div class="container fade-in">
       <div class="box">
 
         <img src="{{ site.photo }}" alt="author photo" class="img-circle" width="150" height="150">
-        <h1>Hello, I'm {{ site.name }}!</h1>
+        <h1>
+          <span class="no-wrap">Hello, I'm</span> <span class="no-wrap"><b>{{ site.name }}</b>!</span>
+        </h1>
         <h3>{{ site.bio }}</h3>
 
         <hr class="hline">
@@ -27,7 +32,7 @@ TODO
 
         <hr class="hline">
 
-        <a href="#" id="toggle-bg" onclick="changebg();" class="btn">DARK</a>
+        <a href="#" id="toggle-bg" class="btn">DARK</a>
 
       </div>
     </div>

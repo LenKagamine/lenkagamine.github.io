@@ -1,16 +1,15 @@
-/*
-TODO:
-  rewrite changebg (doesn't work in IE and sometimes flickers)
-*/
-function changebg(){
-  if(document.getElementById("toggle-bg").innerHTML === "DARK"){
-    document.body.style.backgroundColor = "#373737";
-    document.body.style.backgroundImage = "url(/images/bg-dark.png)";
-    document.getElementById("toggle-bg").innerHTML = "LIGHT";
-  }
-  else{
-    document.body.style.backgroundColor = "#eaeaea";
-    document.body.style.backgroundImage = "url(/images/bg.png)";
-    document.getElementById("toggle-bg").innerHTML = "DARK";
-  }
-}
+$(function(){
+  var $bg = $("#toggle-bg");
+  var $fp = $("#full-page");
+
+  $bg.click(function(){
+    if($bg.html() === "DARK"){
+      $fp.css("opacity", 0);
+      $bg.html("LIGHT");
+    }
+    else{
+      $fp.css("opacity", 1);
+      $bg.html("DARK");
+    }
+  });
+});
