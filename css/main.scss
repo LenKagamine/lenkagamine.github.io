@@ -60,9 +60,10 @@ span.no-wrap{
 
 .center{
   // Align center vertically
+  position: absolute;
+  width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
