@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<img src="{{ site.photo }}" alt="author photo" class="img-circle" style="width: 200px" />
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+#### **I'm Michael Kim, a Computer Science student currently at the University of Waterloo.**
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae semper enim. Curabitur ornare auctor arcu ut suscipit. Nam rhoncus metus augue, ac volutpat est finibus in. Duis non velit tellus. Sed at ipsum lacus. Curabitur vel enim purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Aliquam id ligula rhoncus, tempus est quis, egestas elit. Nam dolor nunc, tincidunt eget justo ut, euismod finibus lacus. Fusce in arcu a sapien fermentum posuere vitae a ipsum. Vivamus rutrum mauris eget varius dictum. Donec feugiat, purus vitae sollicitudin volutpat, augue ipsum porta lectus, nec volutpat enim magna non ante. Suspendisse non elementum lorem. Nullam bibendum, orci id cursus vulputate, nulla nisi cursus libero, eget accumsan tellus tortor at eros. Fusce vehicula nulla augue, in vehicula ex suscipit quis.
+
+Nam erat neque, porta at nunc vitae, ultrices eleifend sapien. Aenean condimentum ultricies est, eget sodales erat. Duis varius, erat a tincidunt egestas, odio urna accumsan est, eget dapibus massa augue ac nulla. Maecenas sed enim sollicitudin tortor facilisis sollicitudin a at velit. Donec luctus hendrerit laoreet. Quisque elit mauris, euismod sit amet laoreet sed, feugiat varius mauris. Maecenas rutrum elementum diam, in ultrices nulla scelerisque at. Praesent sed malesuada metus. Morbi erat magna, viverra non imperdiet ac, feugiat dignissim ipsum. Duis placerat nisl sed aliquet sollicitudin. Fusce in est mollis, pellentesque urna at, ornare est. Nunc lorem sem, sagittis eu tellus et, dignissim malesuada augue. Ut vitae purus tincidunt, viverra lacus eu, venenatis ex.
+
+Cras tristique lorem ut turpis bibendum, vel congue lectus scelerisque. Duis vulputate suscipit nisi, a porta lorem vehicula sed. Sed viverra leo et eros elementum imperdiet. Duis ac congue elit. Morbi auctor malesuada convallis. Maecenas enim est, aliquam quis facilisis vel, sodales et augue. Vestibulum nec neque non dolor aliquet volutpat sed nec nibh. Quisque mollis est ante, tincidunt egestas nisl efficitur quis. Duis pellentesque mauris id ipsum elementum, ut accumsan ipsum venenatis. Praesent lacinia lobortis purus. Curabitur quis purus eleifend, posuere nulla ut, sollicitudin risus. In tincidunt fermentum lorem, non rhoncus enim. Curabitur sagittis, leo ut pellentesque sodales, enim tortor hendrerit diam, eget cursus arcu enim vel diam. Aliquam commodo ante vitae purus dictum pellentesque. Phasellus ultricies vulputate libero vitae commodo.
+
+Aenean ac quam velit. Donec et diam ac sem blandit convallis. In malesuada arcu elit, in varius sem varius eu. Vivamus in tristique ante, ac efficitur diam. Mauris vitae tincidunt felis, et accumsan libero. Nunc scelerisque consectetur nunc, id vestibulum felis lobortis interdum. Proin odio lorem, tincidunt sit amet lobortis scelerisque, aliquam in orci. Donec sem est, vehicula ac sodales vel, efficitur eu lacus. Aliquam efficitur vestibulum condimentum. Curabitur et quam sit amet libero aliquet malesuada. Nam pellentesque in enim sed ullamcorper. Ut eget pellentesque libero. Pellentesque imperdiet sem vitae laoreet ullamcorper.
+
+Cras eros massa, lobortis sed purus et, efficitur malesuada mauris. Pellentesque massa ipsum, semper eu neque vel, finibus aliquam libero. Nam pharetra aliquam risus. Aliquam nec dui tristique sem auctor gravida. Suspendisse consequat, tortor vitae laoreet tempor, augue velit ornare sem, at finibus diam neque ac ligula. Cras semper feugiat lectus, ut lobortis arcu lobortis ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed consequat nulla nunc, ut semper orci dapibus sit amet. Vivamus mattis consectetur hendrerit. Proin tempus mattis tincidunt. Nulla auctor pulvinar eros, vitae varius libero interdum eu. Phasellus risus ligula, blandit ac diam a, elementum laoreet nisi. Pellentesque rhoncus cursus pellentesque. Nullam vitae nisl in nulla eleifend aliquet in eu arcu. Mauris at commodo est, a condimentum purus. Vivamus porta consequat dolor sed rutrum.
+I'm an aspiring software developer who listens to music all day.
