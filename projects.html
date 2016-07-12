@@ -1,0 +1,23 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+<div class="project-list">
+  {% for project in site.projects %}
+    <a class="page-link" href="{{ project.url }}">
+      <div class="project">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <p>Tools: {{ project.tools }}</p>
+      </div>
+    </a>
+  {% endfor %}
+
+  <p>PROJECTS</p>
+  <p>PROJECTS</p>
+  <p>PROJECTS</p>
+  <p>PROJECTS</p>
+  <p>PROJECTS</p>
+  <p>PROJECTS</p>
+</div>

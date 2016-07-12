@@ -1,3 +1,58 @@
+/*
+  Page container
+*/
+// Center vertically main page
+.center{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  // Width
+  display: block;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+
+  // Center horizontally
+  margin-left: auto;
+  margin-right: auto;
+
+  // Colour and Shape
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.3);
+}
+
+.box{
+  text-align: center;
+  padding-top: $spacing-unit;
+}
+
+/*
+  Project page
+*/
+.project-list{
+  p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+  }
+  .project{
+    border: 1px solid black;
+    padding-bottom: $spacing-unit / 3;
+    //background-color: #f00;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  a:visited{
+    color: #2a7ae2;
+  }
+}
+
 /**
  * Site header
  */
