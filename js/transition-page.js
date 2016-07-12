@@ -2,10 +2,6 @@ $(function(){
   if(window.history && window.history.pushState){
     var $mainContent = $("#content"),
         $pageWrap    = $("#post");
-    
-    loadImages(function(){
-      $pageWrap.height($pageWrap.height());
-    });
 
     $(document).on("click", "a.page-link", function(e) {
       link = $(this).attr("href"); //gets the address of new web page (from button/link click)
@@ -18,6 +14,7 @@ $(function(){
   }
 
   function changeContent(href){
+    $pageWrap.height($pageWrap.height());
     $mainContent //get div that needs to be changed
       .fadeOut(200, function() { //fade out over 200 ms, then...
         $mainContent.load(href + " #content", function() { //get new div from new page and set div to it
