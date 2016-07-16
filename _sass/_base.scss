@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html{
+  position: relative;
+}
+
 html, body{
   min-width: 100%;
   min-height: 100%;

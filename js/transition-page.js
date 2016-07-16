@@ -3,7 +3,7 @@ $(function(){
     var $mainContent = $("#content"),
         $pageWrap    = $("#post");
 
-    $(document).on("click", "a.page-link", function(e) {
+    $(document).on("click", "a.fade-link", function(e) {
       link = $(this).attr("href"); //gets the address of new web page (from button/link click)
       if(window.location.pathname !== link){
         history.pushState(null, null, link);
