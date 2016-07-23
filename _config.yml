@@ -10,7 +10,7 @@ title: Michael Kim
 email: michaelkim314@gmail.com
 description:  wwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwww
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://lenkagamine.github.io" # the base hostname & protocol for your site
 
 repo: http://github.com/lenkagamine/lenkagamine.github.io
 
