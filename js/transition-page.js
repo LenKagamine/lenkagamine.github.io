@@ -23,6 +23,10 @@ $(function(){
             $pageWrap.animate({
               height: $mainContent.height() + "px" //re-adjust height of div
             });
+            // Change title
+            var title = $(".post-title").text() + " | Michael Kim";
+            document.getElementsByTagName('title')[0].innerHTML = title;
+            document.title = title;
           });
         });
       });
