@@ -42,9 +42,11 @@ Project page
     margin-bottom: 0;
   }
   .project{
-    border: 1px solid black;
+    border-radius: $border-radius;
     padding-bottom: $spacing-unit / 3;
-    //background-color: #f00;
+    margin-bottom: $spacing-unit / 3;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   }
   a:hover{
     text-decoration: none;
@@ -80,6 +82,7 @@ Project page
   }
 }
 
+//Lightbulb positioning
 .lightbulb{
   position: absolute;
   z-index: 5;
