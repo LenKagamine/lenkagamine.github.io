@@ -4,7 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 <div class="project-list">
-  {% for project in site.projects %}
+  {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+  {% for project in sortedProjects %}
     <a class="fade-link" href="{{ project.url }}">
       <div class="project">
         <h2>{{ project.title }}</h2>

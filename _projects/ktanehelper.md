@@ -4,6 +4,7 @@ title: Keep Talking and Nobody Explodes Bot
 description:  Voice controlled bomb defusing bot
 tools: Python
 github: ktane-helper
+date: 2016-03-17
 ---
 
 ### About

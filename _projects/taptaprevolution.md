@@ -4,6 +4,7 @@ title: Tap Tap Revolution
 description: Console Rhythm Game
 tools: C++
 github: Tap-Tap-Revolution
+date: 2015-06-19
 ---
 
 ### About
