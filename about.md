@@ -17,5 +17,3 @@ I'm always passionate about learning new concepts, and understanding how things 
 Whenever I'm not writing code, I'm usually listening to music, wondering what to create next, or blowing some steam with games.
 
 This website showcases all of my projects, ranging from [web development] to [working with hardware].
-
-Want to have a chat? Check my [contact page] to reach me by [email](mailto:{{ site.email }}), [Github](https://github.com/{{ site.github }}), or [LinkedIn](https://ca.linkedin.com/in/{{ site.linkedin }}).

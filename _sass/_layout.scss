@@ -44,7 +44,7 @@ Project page
   .project{
     border-radius: $border-radius;
     padding-bottom: $spacing-unit / 3;
-    margin-bottom: $spacing-unit / 3;
+    margin: 0 $spacing-unit/3 $spacing-unit/3 $spacing-unit/3;
     background-color: #fafafa;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   }
@@ -220,7 +220,7 @@ Project page
 */
 .post-header {
   h1, h2, h3, h4, h5, h6{
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 2;
   }
 }
 
