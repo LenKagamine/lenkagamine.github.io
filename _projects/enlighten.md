@@ -16,6 +16,8 @@ Inspired by other webgames, Enlighten is centered around cooperation; rather tha
 
 Initially, I started this project to learn JavaScript and how to handle client and server side code. It is still in development, with many features planned. Currently, there are three levels available with increasing difficulty.
 
+To make building and editing levels easier, I made a level editor that can import existing levels and output as JSON (and put into /server/room.json). It is still very basic and can only handle walls and empty tiles, but I might upload it in the future when it has more features available.
+
 ### Gameplay
 
 - Use WASD or the arrow keys to move.
@@ -24,18 +26,4 @@ Initially, I started this project to learn JavaScript and how to handle client a
 - Colliding into a wall will return the player back to the start of the level. At that position, a small light will be placed for five minutes before disappearing.
 - Once reaching the end of a level, the player will be teleported to the start of the next level.
 
-Note: since there are only three levels, finishing the last level will send the player back to the start of the last level.
-
-### Requirements
-
-Enlighten needs the following dependencies:
-
-- Node.js with NPM
-- Socket.io
-- Express
-
-Clone the repository, and run `npm install` to install all the dependencies.
-
-To start the server, run `npm start`.
-
-The game will be available at `localhost:5000`, or wherever it's installed.
+Note: currently, there are only three levels available. Finishing the last level will send the player back to the start of the last level.

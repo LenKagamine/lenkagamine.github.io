@@ -26,10 +26,6 @@ I also had a separate program that would generate a song data file. However, bot
 
 ### Development
 
-Game.cpp handles the entire loading and playing portion of the game. All of the game's mechanics, including parsing the data files and drawing the notes and the grid, happen here.
+I chose to avoid using any external libraries or Windows API for graphics simply convenience (although manipulating the console window was in itself a challenge).
 
-Utils.cpp is a group of utility methods, such as searching for songs, adjusting the console's size, and changing colour.
-
-Main.cpp is where the remainder of the code lies. The intro and all the menus are set here.
-
-To compile: Tap Tap Revolution makes a lot of Windows API calls to manipulate the console size, change colour, etc. It plays music using the MCI command `mciSendString()`, which requires `-lwinmm`.
+Initially, the entire screen was refreshed when drawing each frame of the game. However, clearing and redrawing caused the window to constantly flicker. I fixed this by only redrawing portions of the screen that needed to be changed, such as moving the notes down or changing the score, and leaving the static portions untouched. This vastly improved the visibility of the game as most of the flickering disappeared. It still slightly suffers from the same problem, most visible on the notes, but is not very disruptive to the gameplay.
