@@ -60,8 +60,6 @@ Project page
 * Site header
 */
 .site-header {
-  //border-top: 5px solid $grey-color-dark;
-  //border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
 
   // Positioning context for the mobile navigation icon
@@ -83,7 +81,7 @@ Project page
 }
 
 //Lightbulb positioning
-.lightbulb{
+#lightbulb{
   position: absolute;
   z-index: 5;
   top: 0;
@@ -156,31 +154,6 @@ Project page
     }
   }
 }
-
-
-
-/**
-* Site footer
-*/
-.footer-col-1, .footer-col-2 {
-  float: left;
-  margin-left: $spacing-unit / 4;
-  margin-right: $spacing-unit / 4;
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
-  a {
-    display: block;
-  }
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1, .footer-col-2 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-    padding-bottom: $spacing-unit / 4;
-  }
-}
-
 
 
 /**

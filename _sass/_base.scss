@@ -123,7 +123,7 @@ span.no-wrap{
 hr.hline{
   border: 0;
   height: 1px;
-  background-color: #e8e8e8;
+  background-color: #d0d0d0;
   margin: $spacing-unit/2 0;
 }
 
@@ -209,8 +209,6 @@ pre {
 
 /**
  * Wrapper
- footer.html
-
  */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
