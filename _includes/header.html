@@ -1,15 +1,17 @@
 <header class="site-header">
 
   <div class="wrapper">
+  {% include lightbulb.html %}
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
       <a class="menu-icon">{% include icon-menu.svg %}</a>
-      <div class="menu">
+      <div id="menu">
         <a class="page-link fade-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
         <a class="page-link fade-link" href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
         <a class="page-link fade-link" href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
+        <a class="page-link fade-link" href="{{ '/resume/' | prepend: site.baseurl }}">Resume</a>
 
         <a href="https://github.com/{{ site.github }}"><span class="icon">{% include icon-github.svg %}</span></a>
         <a href="https://ca.linkedin.com/in/{{ site.linkedin }}"><span class="icon">{% include icon-linkedin.svg %}</span></a>
