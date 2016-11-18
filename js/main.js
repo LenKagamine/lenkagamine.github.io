@@ -8,7 +8,7 @@ $(function(){
   var $sitetitle = $("#site-title");
   var $menulinks = $("#menu");
 
-  var $sitenav = $("#site-nav");
+  var $sitenav = $(".site-nav");
 
   var state = 1;
 
@@ -18,13 +18,13 @@ $(function(){
     if(state === 0){ //dark
       $sitetitle.css("color", "#fff");
       $container.css("background-color", "#eaeaea");
-      $sitenav.css("background-color", "#424242");
+      $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#fff");
     }
     else{ //light
       $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
       $container.css("background-color", "#fff");
-      $sitenav.css("background-color", "#eaeaea");
+      $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#111");
     }
   });
