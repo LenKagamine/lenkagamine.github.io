@@ -10,6 +10,8 @@ $(function(){
 
   var $sitenav = $(".site-nav");
 
+  var $menugithub = $("#menu-github");
+
   var state = 1;
 
   $togglebg.click(function(){
@@ -20,12 +22,16 @@ $(function(){
       $container.css("background-color", "#eaeaea");
       $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#fff");
+
+      $menugithub.css("fill", "#fff");
     }
     else{ //light
       $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
       $container.css("background-color", "#fff");
       $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#111");
+
+      $menugithub.css("fill", "#000");
     }
   });
 });
