@@ -11,6 +11,7 @@ $(function(){
   var $sitenav = $(".site-nav");
 
   var $menugithub = $("#menu-github");
+  var $menulinked = $("#menu-linkedin");
 
   var state = 1;
 
@@ -24,6 +25,7 @@ $(function(){
       $menulinks.children().css("color", "#fff");
 
       $menugithub.css("fill", "#fff");
+      $menulinked.css("fill", "#fff");
     }
     else{ //light
       $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
@@ -32,6 +34,7 @@ $(function(){
       $menulinks.children().css("color", "#111");
 
       $menugithub.css("fill", "#000");
+      $menulinked.css("fill", "#0083be");
     }
   });
 });
