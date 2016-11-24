@@ -4,7 +4,7 @@ title: xkcd explainer
 description: Chrome extension for xkcd
 tools: Javascript, CSS, Chrome
 github: xkcd-explainer
-link: https://chrome.google.com/webstore/detail/xkcd-explainer/foejkfobkipagoaicljcokpdbdldfmdn
+link: chrome.google.com/webstore/detail/xkcd-explainer/foejkfobkipagoaicljcokpdbdldfmdn
 date: 2016-07-27
 ---
 
