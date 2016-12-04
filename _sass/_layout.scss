@@ -38,17 +38,21 @@ Page container
 Project page
 */
 .project-list{
+  display: inline-block;
+  width: 90%;
+
   p, h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
   }
   .project{
     border-radius: $border-radius;
-    padding-bottom: $spacing-unit / 3;
-    margin: 0 $spacing-unit/3 $spacing-unit/3 $spacing-unit/3;
+    /* padding-bottom: $spacing-unit / 3; */
+    margin: 0 auto $spacing-unit/3 auto;
     background-color: #fafafa;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
-    height: 200px;
+    width: 400px;
+    height: 225px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -66,6 +70,18 @@ Project page
   }
   .project:hover .project-box{
     opacity: 1;
+  }
+  .project-link{
+    &:nth-child(odd){
+      float: left;
+    }
+    &:nth-child(even){
+      float: right;
+    }
+    @include media-query($single-col){
+      float: none!important;
+      width: 90%;
+    }
   }
 
   a:hover{
