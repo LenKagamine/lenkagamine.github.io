@@ -3,14 +3,20 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-<div class="project-list">
+<div class="project-list" style="display:inline-block; width:100%;">
   {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
   {% for project in sortedProjects %}
-    <a class="fade-link" href="{{ project.url }}">
-      <div class="project">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
-        <p>Tools: {{ project.tools }}</p>
+    <a class="fade-link" href="{{ project.url }}" style="float:left;width:49%;">
+      <div class="project" style="background-image: url('../images/{{ project.title }}.png');">
+        <div class="project-box">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+          <p>Tools: {{ project.tools }}</p>
+          {% assign end = forloop.index0 | modulo:2 %}
+          {% if end == 0 %}
+          <p>{{ project.title }}</p>
+          {% endif %}
+        </div>
       </div>
     </a>
   {% endfor %}

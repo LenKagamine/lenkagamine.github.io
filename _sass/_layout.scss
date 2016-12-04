@@ -47,7 +47,27 @@ Project page
     margin: 0 $spacing-unit/3 $spacing-unit/3 $spacing-unit/3;
     background-color: #fafafa;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-box{
+      padding: 10px;
+      background-color: #fafafa;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      border-radius: $border-radius;
+
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
   }
+  .project:hover .project-box{
+    opacity: 1;
+  }
+
   a:hover{
     text-decoration: none;
   }
