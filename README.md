@@ -1,5 +1,3 @@
 # lenkagamine.github.io
 
-Personal website
-
-Currently under construction...
+Personal portfolio website made using Jekyll

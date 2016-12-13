@@ -7,7 +7,7 @@ permalink: /projects/
   {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
   {% for project in sortedProjects %}
     <a class="fade-link project-link" href="{{ project.url }}">
-      <div class="project" style="background-image: url('../images/{{ project.title }}.png');">
+      <div class="project" style="background-image: url('../images/{{ project.title | slugify }}.png');">
         <div class="project-box">
           <h2>{{ project.title }}</h2>
           <h3>{{ project.description }}</h3>
