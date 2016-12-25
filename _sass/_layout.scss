@@ -67,6 +67,12 @@ Project page
       opacity: 0;
       transition: opacity .2s ease-in-out;
     }
+
+    @include media-query($on-palm){
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   .project:hover .project-box{
     opacity: 1;
@@ -79,8 +85,13 @@ Project page
       float: right;
     }
     @include media-query($single-col){
-      float: none!important;
-      width: 90%;
+      float: left !important;
+      width: 100%;
+    }
+    @include media-query($on-palm){
+      padding-bottom: 56.25%; // 16:9
+      position: relative;
+      margin-bottom: $spacing-unit/3;
     }
   }
 
