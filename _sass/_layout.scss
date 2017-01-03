@@ -151,6 +151,7 @@ Project page
 .site-nav, .site-nav-dark { // top menu / mobile dropdown menu
   float: right;
   line-height: 56px;
+  z-index: 2;
 
   .menu-icon {
     display: none;
