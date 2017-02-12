@@ -1,3 +1,5 @@
+---
+---
 $(function(){
   if(window.history && window.history.pushState){
     var $mainContent = $("#content"),
@@ -27,6 +29,7 @@ $(function(){
             var title = $(".post-title").text() + " | Michael Kim";
             document.getElementsByTagName('title')[0].innerHTML = title;
             document.title = title;
+            if($(".post-title").text() === "Projects") initProjects();
           });
         });
       });

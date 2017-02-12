@@ -45,9 +45,10 @@ $(function(){
     }
   });
 
+  initProjects();
+});
 
-
-  /* Toggle projects */
+function initProjects(){  /* Toggle projects */
   var shown = []; //nth project shown?
   var projects = []; //jQuery object of nth project
   function showAll(){
@@ -66,7 +67,7 @@ $(function(){
   }
   function hideProject(i){
     if(shown[i]){
-        projects[i].detach();
+      projects[i].detach();
     }
     shown[i] = false;
   }
@@ -80,7 +81,7 @@ $(function(){
   });
   var prev = ""; //last clicked tool (for undo toggle)
   $(".tools").each(function(i, obj){
-    obj.firstChild.nextSibling.onclick = function(e){
+    $(obj).children().first().click(function(e){
       var name = e.target.innerHTML;
       showAll();
       if(prev !== name){
@@ -93,13 +94,6 @@ $(function(){
         prev = name;
       }
       else prev = "";
-    };
+    });
   });
-});
-/*
-onclick for any element with class "tools"
-add/remove class for clicked tool
-  toggle between not clicked / clicked color
-pick out tool name from clicked element
-only show projects that contain selected tool(s)
-*/
+}
