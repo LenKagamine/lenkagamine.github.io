@@ -24,6 +24,8 @@ $(function(){
             $mainContent.fadeIn(200); //fade back content
             $pageWrap.animate({
               height: $mainContent.height() + "px" //re-adjust height of div
+            }, 400, function(){
+              $pageWrap.height("auto"); //set height back to auto
             });
             // Change title
             var title = $(".post-title").text() + " | Michael Kim";
