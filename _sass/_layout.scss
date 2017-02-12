@@ -1,7 +1,7 @@
 /*
 Page container
 */
-// Center vertically main page
+// Full screen flexbox for centering main screen
 .center{
   position: absolute;
   width: 100%;
@@ -9,7 +9,7 @@ Page container
   display: flex;
   align-items: center;
 }
-
+// Centered container
 .container{
   // Width
   display: block;
@@ -27,7 +27,7 @@ Page container
   border-radius: $border-radius;
   box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.3);
 }
-
+// Content inside container
 .box{
   text-align: center;
   padding-top: $spacing-unit / 2;
@@ -37,6 +37,7 @@ Page container
 /*
 Project page
 */
+// Container for all projects in projects page
 .project-list{
   display: inline-block;
   width: 90%;
@@ -44,6 +45,7 @@ Project page
   p, h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
   }
+  // Individual project
   .project{
     border-radius: $border-radius;
     /* padding-bottom: $spacing-unit / 3; */
@@ -57,7 +59,7 @@ Project page
     display: flex;
     justify-content: center;
     align-items: center;
-
+    // Content inside project on hover
     .project-box{
       padding: 10px;
       background-color: #fafafa;
@@ -67,16 +69,18 @@ Project page
       opacity: 0;
       transition: opacity .2s ease-in-out;
     }
-
+    // Full width projects
     @include media-query($on-palm){
       position: absolute;
       width: 100%;
       height: 100%;
     }
   }
+  // Show content on hover
   .project:hover .project-box{
     opacity: 1;
   }
+  // Alternate left/right align for two columns
   .project-link{
     &:nth-child(odd){
       float: left;
@@ -84,12 +88,14 @@ Project page
     &:nth-child(even){
       float: right;
     }
+    // One column projects
     @include media-query($single-col){
       float: left !important;
       width: 100%;
     }
+    // Full width projects
     @include media-query($on-palm){
-      padding-bottom: 56.25%; // 16:9
+      padding-bottom: 56.25%; // 16:9 aspect ratio
       position: relative;
       margin-bottom: $spacing-unit/3;
     }
@@ -243,6 +249,29 @@ Project page
 .post-link {
   display: block;
   font-size: 24px;
+}
+
+
+/*
+ * Project Tools list in projects page
+*/
+.tools{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #B4B4B4;
+  padding: 2px 4px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  cursor: pointer;
+
+  a{
+    color: black;
+    display: inline-block;
+  }
+
+  a:hover{
+    text-shadow: 0px 0px 1px black;
+  }
 }
 
 

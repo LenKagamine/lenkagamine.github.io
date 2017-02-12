@@ -20,9 +20,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    1000px;
 
-$on-palm:          800px;
-$on-laptop:        900px;
-$single-col:       1000px;
+$on-palm:          800px; // <800: full width projects
+$on-laptop:        900px; // <900: font size changes
+$single-col:       1000px; // <1000: one column projects
 
 
 $bg-image:         url(/images/bg.png);

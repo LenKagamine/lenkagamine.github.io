@@ -5,15 +5,34 @@ permalink: /projects/
 ---
 <div class="project-list">
   {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+  {% assign tools = "" | split: "|" %}
+  {% for project in sortedProjects %}
+    {% assign list = project.tools | split: ", " %}
+    {% for item in list %}
+      {% assign tools = tools | push: item | uniq %}
+    {% endfor %}
+  {% endfor %}
+  {% assign sortedTools = tools | sort %}
+
+  <ul>
+    {% for item in sortedTools %}
+    <li class="tools">
+      <a>{{ item }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p></p>
+
   {% for project in sortedProjects %}
     <a class="fade-link project-link" href="{{ project.url }}">
       <div class="project" style="background-image: url('../images/{{ project.title | slugify }}.png');">
         <div class="project-box">
           <h2>{{ project.title }}</h2>
           <h3>{{ project.description }}</h3>
-          <h4>Tools: {{ project.tools }}</p>
+          <h4>Tools: {{ project.tools }}</h4>
         </div>
       </div>
     </a>
   {% endfor %}
+
 </div>

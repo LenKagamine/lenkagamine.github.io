@@ -1,6 +1,7 @@
 ---
 ---
 $(function(){
+  /* Toggle light/dark theme */
   var $togglebg = $(".toggle-bg");
   var $background = $("#full-page");
   var $container = $(".container");
@@ -43,4 +44,62 @@ $(function(){
       $bulbicon.css("fill", "#000");
     }
   });
+
+
+
+  /* Toggle projects */
+  var shown = []; //nth project shown?
+  var projects = []; //jQuery object of nth project
+  function showAll(){
+    for(var i=0;i<projects.length;i++){
+      showProject(i);
+    }
+  }
+  function showProject(i){
+    if(!shown[i]){
+      var index = projects[i].data("index");
+      var visibleNum = $(".project-link").length;
+      if(index < visibleNum) $(".project-link").eq(index).before(projects[i]);
+      else $(".project-link").last().after(projects[i]);
+    }
+    shown[i] = true;
+  }
+  function hideProject(i){
+    if(shown[i]){
+        projects[i].detach();
+    }
+    shown[i] = false;
+  }
+
+  var projectTools = []; //array of tools of nth project
+  $(".project-link").each(function(i, obj){
+    projectTools[i] = $(obj).find("h4").html().substring(7).split(", ");
+    projects[i] = $(obj);
+    shown[i] = true;
+    $(obj).data("index", i);
+  });
+  var prev = ""; //last clicked tool (for undo toggle)
+  $(".tools").each(function(i, obj){
+    obj.firstChild.nextSibling.onclick = function(e){
+      var name = e.target.innerHTML;
+      showAll();
+      if(prev !== name){
+        for(var j=0;j<projectTools.length;j++){
+          if(projectTools[j].indexOf(name) === -1){
+            if(shown[j]) hideProject(j);
+            else showProject(j);
+          }
+        }
+        prev = name;
+      }
+      else prev = "";
+    };
+  });
 });
+/*
+onclick for any element with class "tools"
+add/remove class for clicked tool
+  toggle between not clicked / clicked color
+pick out tool name from clicked element
+only show projects that contain selected tool(s)
+*/
