@@ -2,7 +2,7 @@
 layout: project
 title: Keep Talking and Nobody Explodes Bot
 description:  Voice controlled bomb defusing bot
-tools: Python, Voice Recognition
+tools: Python, Voice Recognition, Text to Speech
 github: ktane-helper
 date: 2016-03-17
 ---

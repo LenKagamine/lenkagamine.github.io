@@ -9,9 +9,16 @@ layout: default
       {% if page.github %}
         <h4>
           Github:
-          <a href="https://github.com/{{ site.github }}/{{ page.github }}">
-            {{ page.github }}
-          </a>
+          {% assign arr = page.github | split: '/' %}
+          {% if arr.size > 1 %}
+            <a href="https://github.com/{{ arr[0] }}/{{ arr[1] }}">
+              {{ arr[1] }}
+            </a>
+          {% else %}
+            <a href="https://github.com/{{ site.github }}/{{ page.github }}">
+              {{ page.github }}
+            </a>
+          {% endif %}
         </h4>
       {% endif %}
       {% if page.link %}<h4 style="word-wrap: break-word;">Link: <a href="https://{{ page.link }}">{{ page.link }}</a></h4> {% endif %}

@@ -2,7 +2,7 @@
 layout: project
 title: Enlighten
 description: Collaborative multiplayer webgame
-tools: JavaScript, Node.js, Socket.io
+tools: JavaScript, Node.js, Socket.io, HTML, CSS
 github: Enlighten
 link: enlighten-game.herokuapp.com
 date: 2015-08-30
