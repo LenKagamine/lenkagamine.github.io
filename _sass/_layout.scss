@@ -322,3 +322,15 @@ Project page
     }
   }
 }
+
+.blog-link:hover, .blog-link:active, .blog-link:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.blog-box{
+  margin-bottom: 5px;
+  background-color: $grey-color-light;
+  border-radius: $border-radius;
+  border: 3px solid black;
+}

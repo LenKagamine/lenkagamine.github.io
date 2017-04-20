@@ -4,12 +4,13 @@ title: Blog
 permalink: /blog/
 ---
 
-<div>
-  <ul>
+<div class="blog-list">
   {% for post in site.posts reversed %}
-    <li>
-      <a class="page-link fade-link" href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+      <a class="fade-link blog-link" href="{{ post.url }}">
+        <div class="blog-box">
+          <h2>{{ post.title }}</h2>
+          <h3>{{ post.date | date: "%b %-d, %Y" }}</h3>
+        </div>
+      </a>
   {% endfor %}
-</ul>
 </div>
