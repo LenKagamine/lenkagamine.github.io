@@ -2,7 +2,7 @@
 layout: post
 title:  AP Physics C
 date:   2017-04-19
-tags: school
+tags: life
 ---
 
 AP Physics C was my Grade 12 Physics course and by far the most challenging course I've ever taken (arguably the hardest high school physics course in North America). Rather than a conventional high school course, AP Physics took it up several notches, all thanks to our teacher, Mr. van Bemmel, nicknamed "vB".
