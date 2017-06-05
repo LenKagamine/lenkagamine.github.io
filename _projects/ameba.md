@@ -11,7 +11,7 @@ date: 2015-01-22
 
 aMEba is a life simulation game where the player can either live as an organism, eating berries and other organisms to stay alive. By consuming enemies, you gain a portion of their DNA, improving your stats such as attack and speed. There is also a sandbox mode where you can watch organisms fight each other in a custom environment.
 
-This game was my summative project for the Grade 10 Computer Science course.
+This game was my team summative project for the Grade 10 Computer Science course.
 
 ### Gameplay
 

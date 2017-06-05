@@ -17,8 +17,8 @@ Since last Monday, I started the first work term at none other than Yahoo. At fi
 - What are my coworkers like?
 - What is my manager like?
 - How difficult will the work be?
-- What if I come late to work?
+- Will I come to work on time?
 
-But after just a few days, most of my worries were resolved. The work culture is casual and very inviting, with help always around the corner (quite literally, my manager’s desk is across from mine). I felt like I was part of my team, and not some outsider that works on the same project. With the use of a “buddy system”, one of the employees in the same team is tasked to provide on-hand advice and instructions(like a mini-manager), and has been extremely helpful for me to understand the existing codebase. The cafeteria on campus is huge and loaded daily with free food for all meals of the day. This makes it extremely convenient to grab a bite while working. All in all, I’m able to focus on my work without having to worry about other concerns.
+But after just a few days, most of my worries were resolved. The work culture is casual and very inviting, with help always around the corner (quite literally, my manager’s desk is across from mine). I felt like I was part of my team, and not some outsider that works on the same project. One of the employees in my team is tasked to provide on-hand advice and instructions (like a mini-manager), and has been extremely helpful for me to understand the existing codebase. The cafeteria on campus is huge and loaded daily with free food for all meals of the day. This makes it extremely convenient to grab a bite while working. All in all, I’m able to focus on my work without having to worry about other concerns.
 
 So here I am. One week has passed since I arrived here. There have been ups and downs, but it’s an exciting adventure that I’m looking forward to. And it’s just the beginning.
