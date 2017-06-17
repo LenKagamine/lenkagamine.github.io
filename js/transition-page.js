@@ -31,6 +31,9 @@ $(function(){
             var title = $(".post-title").text() + " | Michael Kim";
             document.getElementsByTagName('title')[0].innerHTML = title;
             document.title = title;
+
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+
             if($(".post-title").text() === "Projects") initProjects();
           });
         });

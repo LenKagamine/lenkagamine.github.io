@@ -14,6 +14,8 @@ TriggerBot is a bot that takes in messages from a user, analyzes the sentiment o
 
 This was our team's submission for McHacks 2017.
 
+TriggerBot relies on several tools that were provided at McHacks for a limited-time use. Our keys for these tools have long since expired, and so TriggerBot will lack some features and will no longer work as intended.
+
 ### Dependencies
 
 TriggerBot uses several APIs, each working on one distinct component:
