@@ -113,9 +113,9 @@ Also, the column predecessors can be found and joined in succession. The only fa
 
 Finally, represent the column predecessors as a simple graph. Each column predecessor can be visualized as a node with two values, the binary values for each column. Grouping and ordering the processors into their original column, the number of paths from a predecessor from the first column to one from the last column is the number of predecessors of the grid.
 
+Even though many column predecessors can share a column, their previous columns are not important in finding the next one; only the number of column predecessors that share that column is needed. Since each predecessor's nodes are distinct and can't be backtracked, a [simple DP solution](
 https://cs.stackexchange.com/questions/3078/algorithm-that-finds-the-number-of-simple-paths-from-s-to-t-in-g
-
-Even though many column predecessors can share a column, their previous columns are not important in finding the next one; only the number of column predecessors that share that column is needed. Since each predecessor's nodes are distinct and can't be backtracked, a simple DP solution can solve for the answer.
+) can solve for the answer.
 
 This step also only requires two column predecessors to calculate each step. Hence, this step can be done iteratively as well to save memory.
 
