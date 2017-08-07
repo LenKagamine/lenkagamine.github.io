@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
+{% seo %}
 
-  <body>
-    <div id="full-page"></div>
-    <div id="full-page-dark"></div>
+<body>
+  <div id="full-page"></div>
+  <div id="full-page-dark"></div>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="container">
-      <div class="box">
+  <div class="container">
+    <div class="box">
 
-        {{ content }}
+      {{ content }}
 
-        {% include footer.html %}
+      {% include footer.html %}
 
-      </div>
     </div>
+  </div>
 
-  </body>
+  {% include scripts.html %}
+
+</body>
 
 </html>
