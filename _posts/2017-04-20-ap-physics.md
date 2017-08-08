@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  AP Physics C
-date:   2017-04-19
+date:   2017-04-20
 tags: life
 ---
 
-AP Physics C was my Grade 12 Physics course and by far the most challenging course I've ever taken (arguably the hardest high school physics course in North America). Rather than a conventional high school course, AP Physics took it up several notches, all thanks to our teacher, Mr. van Bemmel, nicknamed "vB".
+AP Physics C was my Grade 12 Physics course and by far the most challenging course I've ever taken (possibly the hardest high school physics course in North America). Rather than a conventional high school course, AP Physics took it up several notches, all thanks to our teacher, Mr. van Bemmel, nicknamed "vB".
 
 Unlike other high school courses where the teacher would be interacting often with the class, occasionally going over questions or picking someone to give an answer, AP Physics was taught through a series of university-style lectures. Although the course covered everything in the regular curriculum, the level was that of first and second-year physics. I was expected to know first-year calculus going into the course (which had been previously covered in Grade 11) as the lectures frequently explained concepts and proofs using integration and differential equations. In addition, the course included units in celestial mechanics, space science, and astrophysics. To cover everything in five short months, a new topic was introduced almost every day. To match the accelerated course material (in speed and in difficulty), there would be at least one test every week. Each test consisted of only four questions, but they required an acute understanding of the current section and the ability to apply that knowledge to complex, multi-step problems, even being as abstract as proofs.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  A beginner's look at JS Development
 date:   2017-06-10
-tags: life
+tags: code
 ---
 
 It's been a month since I started working at Yahoo, and I've learned quite a lot during that short time:

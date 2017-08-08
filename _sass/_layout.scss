@@ -333,4 +333,15 @@ Project page
   background-color: $grey-color-light;
   border-radius: $border-radius;
   border: 3px solid black;
+
+  p {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      @include media-query($on-palm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  }
+
 }
