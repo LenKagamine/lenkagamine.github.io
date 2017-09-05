@@ -5,6 +5,7 @@ $(function() {
   var $togglebg = $(".toggle-bg");
   var $background = $("#full-page-color");
   var $container = $(".container");
+  var $lightchain = $(".chain");
 
   var $sitetitle = $("#site-title");
   var $menulinks = $("#menu");
@@ -26,6 +27,8 @@ $(function() {
       $container.css("background-color", "#eaeaea");
       $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#fff");
+      $lightchain.height(100);
+      $lightchain.removeClass("light-on").addClass("light-off");
 
       $menugithub.css("fill", "#fff");
       $menulinked.css("fill", "#fff");
@@ -37,6 +40,8 @@ $(function() {
       $container.css("background-color", "#fff");
       $sitenav.toggleClass("site-nav site-nav-dark");
       $menulinks.children().css("color", "#111");
+      $lightchain.height(150);
+      $lightchain.removeClass("light-off").addClass("light-on");
 
       $menugithub.css("fill", "#000");
       $menulinked.css("fill", "#0083be");

@@ -134,7 +134,27 @@ Project page
 }
 
 //Lightbulb positioning
-.lightbulb{
+@keyframes light-pull-on {
+  0%   { height: 100px; }
+  50%  { height: 200px; }
+  100% { height: 150px; }
+}
+
+@keyframes light-pull-off {
+  0%   { height: 150px; }
+  50%  { height: 200px; }
+  100% { height: 100px; }
+}
+
+.light-on {
+  animation: light-pull-on 0.75s;
+}
+
+.light-off {
+  animation: light-pull-off 0.75s;
+}
+
+.lightbulb {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -143,8 +163,7 @@ Project page
 
   .chain {
     border-left: 2px dotted black;
-    height: 200px;
-    transition: height 0.5s ease-in-out;
+    height: 150px;
   }
 
   .handle {
