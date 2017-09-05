@@ -134,11 +134,44 @@ Project page
 }
 
 //Lightbulb positioning
-#lightbulb{
+.lightbulb{
   position: absolute;
   z-index: 5;
   top: 0;
-  left: 0;
+  left: 85px;
+  padding-left: 15px;
+
+  .chain {
+    border-left: 2px dotted black;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .handle {
+    position: relative;
+    background-color: #555;
+    width: 15px;
+    height: 15px;
+    border: 1px #888 solid;
+    border-radius: 50%;
+    left: -7px;
+  }
+
+  .lightbulb-icon {
+    display: none;
+  }
+
+  @include media-query($on-palm) {
+    left: 0;
+
+    .chain, .handle {
+      display: none;
+    }
+
+    .lightbulb-icon {
+      display: block;
+    }
+  }
 }
 
 

@@ -21,7 +21,7 @@
 @import "syntax-highlighting";
 
 
-#full-page, #full-page-dark{
+#full-page, #full-page-color{
   position: absolute;
   min-width: 100%;
   min-height: 100%;
@@ -34,14 +34,16 @@
 
 #full-page{
   background-image: $bg-image;
+  // background: linear-gradient(rgba(255, 0, 0, 0.45),rgba(255, 0, 0, 0.45)), $bg-image;
+  // background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), $bg-image;
   z-index: -1;
-
-  -webkit-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
 }
-#full-page-dark{
-  background-image: $bg-image-dark;
-  z-index: -2;
+#full-page-color{
+  opacity: 0;
+  // background-image: $bg-image-dark;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transition: background-color, opacity .5s ease-in-out;
 }
 
 // Animate fade in & out
