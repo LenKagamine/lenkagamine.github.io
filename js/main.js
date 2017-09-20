@@ -2,16 +2,15 @@
 ---
 $(function() {
   /* Toggle light/dark theme */
-  var $togglebg = $(".toggle-bg");
-  var $background = $("#full-page-color");
-  var $container = $(".container");
-  var $lightchain = $(".chain");
-
-  var $sitetitle = $("#site-title");
-  var $menulinks = $("#menu");
-
+  var $togglebg = $(".toggle-bg"); // Light switch
+  var $lightchain = $(".chain"); // Light chain
+  var $background = $("#full-page-color"); // Background color overlay
+  // Text and Container
   var $sitenav = $(".site-nav");
-
+  var $sitetitle = $("#site-title");
+  var $container = $(".container"); // Content container
+  var $menulinks = $("#menu");
+  // Icons
   var $menugithub = $("#menu-github");
   var $menulinked = $("#menu-linkedin");
   var $menuicon = $("#menu-icon");
@@ -19,34 +18,50 @@ $(function() {
 
   var state = 0;
 
+  function lightTheme() {
+    $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
+    $container.css("background-color", "#fff");
+    $menulinks.children().css("color", "#111");
+
+    $menugithub.css("fill", "#000");
+    $menulinked.css("fill", "#0083be");
+    $menuicon.children().css("fill", "#505050");
+    $bulbicon.css("fill", "#000");
+  }
+
+  function darkTheme() {
+    $sitetitle.css("color", "#fff");
+    $container.css("background-color", "#eaeaea");
+    $menulinks.children().css("color", "#fff");
+
+    $menugithub.css("fill", "#fff");
+    $menulinked.css("fill", "#fff");
+    $menuicon.children().css("fill", "#fff");
+    $bulbicon.css("fill", "#fff");
+  }
+
   $togglebg.click(function() {
-    state = !state|0;
-    $background.css("opacity", state);
-    if(state === 1) { //dark
-      $sitetitle.css("color", "#fff");
-      $container.css("background-color", "#eaeaea");
-      $sitenav.toggleClass("site-nav site-nav-dark");
-      $menulinks.children().css("color", "#fff");
+    state = (state + 1) % 4;
+    
+    $sitenav.toggleClass("site-nav site-nav-dark");
+
+    if(state % 2 === 1) { //dark
+      $background.css("background-color", "rgba(0, 0, 0, 0.7)");
       $lightchain.height(100);
       $lightchain.removeClass("light-on").addClass("light-off");
-
-      $menugithub.css("fill", "#fff");
-      $menulinked.css("fill", "#fff");
-      $menuicon.children().css("fill", "#fff");
-      $bulbicon.css("fill", "#fff");
+      darkTheme();
     }
-    else { //light
-      $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
-      $container.css("background-color", "#fff");
-      $sitenav.toggleClass("site-nav site-nav-dark");
-      $menulinks.children().css("color", "#111");
+    else if (state % 4 === 2) { //purple
+      $background.css("background-color", "rgba(79, 0, 99, 0.7)");
       $lightchain.height(150);
       $lightchain.removeClass("light-off").addClass("light-on");
-
-      $menugithub.css("fill", "#000");
-      $menulinked.css("fill", "#0083be");
-      $menuicon.children().css("fill", "#505050");
-      $bulbicon.css("fill", "#000");
+      darkTheme();
+    }
+    else { //light
+      $background.css("background-color", "rgba(0, 0, 0, 0)");
+      $lightchain.height(150);
+      $lightchain.removeClass("light-off").addClass("light-on");
+      lightTheme();
     }
   });
 

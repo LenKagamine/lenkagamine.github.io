@@ -38,9 +38,8 @@
 }
 
 #full-page-color{
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: background-color, opacity .5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .5s ease-in-out;
 }
 
 // Animate fade in & out
