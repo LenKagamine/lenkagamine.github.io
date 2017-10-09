@@ -10,7 +10,7 @@ date: 2017-02-05
 
 ### About
 
-Hestia is a web service that allows developers to quickly setup multi-user and real-time web apps. It also acts as a central hub for these apps, allowing users to access them easily.
+Hestia is a web app that allows developers to quickly setup multi-user and real-time web apps.
 
 Hestia is centered around the idea of "rooms": groups of users that together interact with a web app simultaneously. These apps can be anything from multiplayer games, voice/video/text chat systems, drawing tools, text editors, or educational quizzes. By providing all the basic networking functionalities, developers only need to write app-specific code when using Hestia.
 
