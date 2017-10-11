@@ -381,7 +381,7 @@ Project page
   outline: 0;
 }
 
-.blog-box{
+.blog-box {
   margin-bottom: 5px;
   background-color: $grey-color-light;
   border-radius: $border-radius;
@@ -397,4 +397,19 @@ Project page
       }
   }
 
+}
+
+/* Lightbox */
+
+.imagebox {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+
+    img {
+      width: 25%;
+      border-radius: 4px;
+    }
+  }
 }
