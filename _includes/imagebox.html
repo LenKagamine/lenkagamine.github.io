@@ -1,0 +1,32 @@
+<div class="imagebox">
+	{% assign titles = include.titles | split: "
+	" | join: "<br />" | newline_to_br | strip_newlines | split: "<br />" %}
+	<!--
+		Explanation of above liquid chain:
+			include.titles can contain LF and CRLF endings, and needs to split on both
+
+			Split on \r\n:
+				split with newline: removes \r\n
+				join: replaces \r\n with <br />
+			Now \r\n is replaced with <br />
+
+			Split on \n:
+				newline_to_br: adds <br \> before \n
+				strip_newlines: removes \n
+			Now both types of newlines are changed to <br />
+				split with <br />
+	-->
+	{% assign count = 1 %}
+	{% for title in titles %}
+		{% if title != "" %}
+			<a
+				href="../images/{{ include.name }}-{{ count }}.png"
+				data-lightbox="{{ include.name }}"
+				data-title="{{ title | strip }}"
+			>
+				<img src="../images/{{ include.name }}-{{ count }}.png">
+			</a>
+			{% assign count = count | plus:1 %}
+		{% endif %}
+	{% endfor %}
+</div>

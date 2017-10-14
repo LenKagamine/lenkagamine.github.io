@@ -26,14 +26,8 @@ I had a lot of fun testing the enemies' behaviours as they try to survive. Curre
 
 A factor that changes the swarm as a whole is their base stats and how they get passed along by consumption. Each organism including the player starts off with a randomized set of stats, such as max health, attack, and speed, which is stored in a DNA object. Whenever an organism eats (deals the killing attack) another organism, some of the victim's DNA stats are added to the killer's DNA and progressing further into the game. An alternative way to survive is to simply eat the berries, but as others continue to advance and improve, it becomes harder to avoid their attacks. In the end, it becomes harder and harder to satisfy your hunger, so all organisms will eventually die.
 
-<div class="imagebox">
-	<a href="../images/ameba-1.png" data-lightbox="ameba" data-title="Survival gameplay">
-		<img src="../images/ameba-1.png">
-	</a>
-	<a href="../images/ameba-2.png" data-lightbox="ameba" data-title="God Mode gameplay">
-		<img src="../images/ameba-2.png">
-	</a>
-	<a href="../images/ameba-3.png" data-lightbox="ameba" data-title="Start menu">
-		<img src="../images/ameba-3.png">
-	</a>
-</div>
+{% include imagebox.html name="ameba" titles="
+	Survival gameplay
+	God Mode gameplay
+	Start menu
+" %}
