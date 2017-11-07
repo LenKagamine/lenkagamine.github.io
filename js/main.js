@@ -45,28 +45,46 @@ $(function() {
     
     $sitenav.toggleClass("site-nav site-nav-dark");
 
-    if(state % 2 === 1) { //dark
+    if(state === 1) { //dark
       $background.css("background-color", "rgba(0, 0, 0, 0.7)");
       $lightchain.height(100);
       $lightchain.removeClass("light-on").addClass("light-off");
+      changeBio("{{ site.bio }}");
       darkTheme();
     }
-    else if (state % 4 === 2) { //purple
+    else if (state === 2) { //purple
       $background.css("background-color", "rgba(79, 0, 99, 0.7)");
       $lightchain.height(150);
       $lightchain.removeClass("light-off").addClass("light-on");
+      changeBio("Yahoo Intern: May - Aug '17");
+      darkTheme();
+    }
+    else if (state === 3) {
+      $background.css("background-color", "rgba(8, 56, 161, 0.7)");
+      $lightchain.height(100);
+      $lightchain.removeClass("light-on").addClass("light-off");
+      changeBio("Facebook Intern: Jan - Apr '18");
       darkTheme();
     }
     else { //light
       $background.css("background-color", "rgba(0, 0, 0, 0)");
       $lightchain.height(150);
       $lightchain.removeClass("light-off").addClass("light-on");
+      changeBio("{{ site.bio }}");
       lightTheme();
     }
   });
 
   initProjects();
 });
+
+function changeBio(bio) {
+  if ($("#site-bio").html() !== bio) {
+    $("#site-bio").fadeOut('fast', function() {
+      $(this).html(bio);
+    }).fadeIn('fast');
+  }
+}
 
 function initProjects() {  /* Toggle projects */
   var shown = []; //nth project shown?
