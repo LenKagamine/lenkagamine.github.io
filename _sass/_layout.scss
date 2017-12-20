@@ -136,15 +136,21 @@ Project page
 
 //Lightbulb positioning
 @keyframes light-pull-on {
-  0%   { height: 100px; }
-  50%  { height: 200px; }
-  100% { height: 150px; }
+  0%   { top: -100px; }
+  50%  { top: 0px; }
+  100% { top: -50px; }
 }
 
 @keyframes light-pull-off {
-  0%   { height: 150px; }
-  50%  { height: 200px; }
-  100% { height: 100px; }
+  0%   { top: -50px; }
+  50%  { top: 0px; }
+  100% { top: -100px; }
+}
+
+@keyframes light-wiggle {
+  0%   { top: -50px; }
+  50%  { top: -40px; }
+  100% { top: -60px; }
 }
 
 .light-on {
@@ -158,13 +164,14 @@ Project page
 .lightbulb {
   position: absolute;
   z-index: 5;
-  top: 0;
+  top: -50px;
   left: 85px;
   padding-left: 15px;
+  animation: light-wiggle 0.5s linear 0.5s 2 alternate;
 
   .chain {
+    height: 200px;
     border-left: 2px dotted black;
-    height: 150px;
   }
 
   .handle {
@@ -177,20 +184,8 @@ Project page
     left: -7px;
   }
 
-  .lightbulb-icon {
-    display: none;
-  }
-
   @include media-query($on-palm) {
     left: 0;
-
-    .chain, .handle {
-      display: none;
-    }
-
-    .lightbulb-icon {
-      display: block;
-    }
   }
 }
 

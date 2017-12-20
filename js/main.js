@@ -3,7 +3,7 @@
 $(function() {
   /* Toggle light/dark theme */
   var $togglebg = $(".toggle-bg"); // Light switch
-  var $lightchain = $(".chain"); // Light chain
+  var $lightchain = $(".lightbulb"); // Light chain
   var $background = $("#full-page-color"); // Background color overlay
   // Text and Container
   var $sitenav = $(".site-nav");
@@ -22,6 +22,7 @@ $(function() {
     $sitetitle.css("color", "#424242"); //color is "$grey-color-dark" in _cariable.scss
     $container.css("background-color", "#fff");
     $menulinks.children().css("color", "#111");
+    $sitenav.removeClass('site-nav-dark').addClass('site-nav');
 
     $menugithub.css("fill", "#000");
     $menulinked.css("fill", "#0083be");
@@ -33,6 +34,7 @@ $(function() {
     $sitetitle.css("color", "#fff");
     $container.css("background-color", "#eaeaea");
     $menulinks.children().css("color", "#fff");
+    $sitenav.removeClass('site-nav').addClass('site-nav-dark');
 
     $menugithub.css("fill", "#fff");
     $menulinked.css("fill", "#fff");
@@ -42,34 +44,33 @@ $(function() {
 
   $togglebg.click(function() {
     state = (state + 1) % 4;
-    
-    $sitenav.toggleClass("site-nav site-nav-dark");
 
-    if(state === 1) { //dark
-      $background.css("background-color", "rgba(0, 0, 0, 0.7)");
-      $lightchain.height(100);
-      $lightchain.removeClass("light-on").addClass("light-off");
-      changeBio("{{ site.bio }}");
-      darkTheme();
+    if (state % 2 === 1) {
+      $lightchain.css('top', -100);
+      $lightchain.css('animation', 'light-pull-off 0.75s');
     }
-    else if (state === 2) { //purple
+    else {
+      $lightchain.css('top', -50);
+      $lightchain.css('animation', 'light-pull-on 0.75s');
+    }
+
+    if (state === 1) { //purple
       $background.css("background-color", "rgba(79, 0, 99, 0.7)");
-      $lightchain.height(150);
-      $lightchain.removeClass("light-off").addClass("light-on");
       changeBio("Yahoo Intern: May - Aug '17");
       darkTheme();
     }
-    else if (state === 3) {
+    else if (state === 2) { //blue
       $background.css("background-color", "rgba(8, 56, 161, 0.7)");
-      $lightchain.height(100);
-      $lightchain.removeClass("light-on").addClass("light-off");
       changeBio("Facebook Intern: Jan - Apr '18");
+      darkTheme();
+    }
+    else if(state === 3) { //dark
+      $background.css("background-color", "rgba(0, 0, 0, 0.7)");
+      changeBio("{{ site.bio }}");
       darkTheme();
     }
     else { //light
       $background.css("background-color", "rgba(0, 0, 0, 0)");
-      $lightchain.height(150);
-      $lightchain.removeClass("light-off").addClass("light-on");
       changeBio("{{ site.bio }}");
       lightTheme();
     }
