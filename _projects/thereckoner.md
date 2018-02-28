@@ -2,7 +2,7 @@
 layout: project
 title: The Reckoner App
 description: High School Newspaper App
-tools: Android, Java, XML
+tools: Android, Java
 link: play.google.com/store/apps/details?id=ca.thereckoner.thereckoner
 date: 2015-08-09
 ---
